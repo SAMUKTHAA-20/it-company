@@ -1,0 +1,167 @@
+/* ---- Culture pillars ---- */
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+.pillar-card {
+  padding: var(--sp-4);
+  background: var(--paper-0);
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.pillar-card p {
+  color: var(--slate-500);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ---- Rural development ---- */
+
+.rural-section {
+  background: var(--ink-900);
+  background-image: radial-gradient(circle at 90% 10%, rgba(31,138,87,0.18), transparent 50%);
+}
+
+.rural-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--sp-5);
+  align-items: center;
+}
+
+.rural-grid__text p {
+  color: var(--slate-300);
+  line-height: 1.75;
+  margin-bottom: var(--sp-2);
+}
+
+.rural-grid__stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.rural-stat {
+  border: 1px solid var(--line-700);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.rural-stat__num {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--signal-green);
+}
+
+.rural-stat span:last-child {
+  color: var(--slate-300);
+  font-size: 0.88rem;
+}
+
+/* ---- Learning ---- */
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+.learning-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.learning-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: var(--sp-2);
+  background: var(--paper-0);
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-md);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.learning-item:hover {
+  transform: translateX(4px);
+}
+
+.learning-item svg {
+  color: var(--signal-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.learning-item span {
+  font-size: 0.92rem;
+  color: var(--ink-900);
+}
+
+/* ---- Work-life balance ---- */
+
+.balance-section {
+  background: var(--paper-0);
+  border-top: 1px solid var(--line-200);
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+.balance-card {
+  text-align: center;
+  padding: var(--sp-4);
+  border-radius: var(--radius-lg);
+  background: var(--paper-50);
+}
+
+.balance-card__stat {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--zoho-red);
+  margin-bottom: 0.4rem;
+}
+
+.balance-card p {
+  color: var(--slate-500);
+  font-size: 0.92rem;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 880px) {
+  .pillars-grid,
+  .balance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rural-grid,
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+}

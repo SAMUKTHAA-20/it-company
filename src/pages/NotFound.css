@@ -1,0 +1,32 @@
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background: var(--paper-50);
+}
+
+.not-found__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-7) 0;
+}
+
+.not-found__code {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--zoho-red);
+}
+
+.not-found__inner h1 {
+  font-size: var(--fs-h2);
+  max-width: 480px;
+}
+
+.not-found__inner p {
+  color: var(--slate-500);
+  margin-bottom: var(--sp-2);
+}

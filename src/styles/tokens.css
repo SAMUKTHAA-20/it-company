@@ -1,0 +1,82 @@
+/* ============================================================
+   ZOHO CORPORATION — DESIGN TOKENS
+   A systems-grid identity: engineering-led, dashboard-flavored,
+   bootstrapped-confidence rather than venture-flashy.
+   ============================================================ */
+
+:root {
+  /* ---------- Color: named, not generic ---------- */
+  --ink-900: #0E1B2B;       /* deep navy-ink — primary dark surface/text */
+  --ink-700: #1F3349;       /* secondary dark, panels */
+  --slate-500: #5B6B7C;     /* secondary text on light */
+  --slate-300: #9AA7B4;     /* tertiary text / placeholders */
+  --paper-50: #F7F5F0;      /* warm off-white background */
+  --paper-0: #FFFFFF;       /* pure white, cards on warm bg */
+  --line-200: #E5E1D8;      /* hairline borders on paper */
+  --line-700: rgba(255,255,255,0.12); /* hairline borders on dark */
+
+  --zoho-red: #C8202F;      /* primary brand accent — used sparingly */
+  --zoho-red-dark: #9E1722;
+  --zoho-red-tint: #FBEAEA;
+
+  --signal-green: #1F8A57;  /* growth / positive metric accent */
+  --signal-amber: #B6791E;  /* awards / highlight accent */
+
+  /* ---------- Type families ---------- */
+  --font-display: "Archivo", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* ---------- Type scale ---------- */
+  --fs-hero: clamp(2.6rem, 6vw, 5rem);
+  --fs-h1: clamp(2.2rem, 4.4vw, 3.4rem);
+  --fs-h2: clamp(1.7rem, 3vw, 2.4rem);
+  --fs-h3: clamp(1.25rem, 1.8vw, 1.6rem);
+  --fs-body-lg: 1.15rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-mono: 0.8rem;
+
+  /* ---------- Spacing scale (8px base) ---------- */
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+  --sp-6: 4rem;
+  --sp-7: 6rem;
+  --sp-8: 8rem;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1240px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgba(14, 27, 43, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 27, 43, 0.08);
+  --shadow-lg: 0 24px 48px rgba(14, 27, 43, 0.14);
+  --shadow-red: 0 12px 28px rgba(200, 32, 47, 0.22);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.18s;
+  --dur-base: 0.32s;
+  --dur-slow: 0.6s;
+
+  /* ---------- Z-index ---------- */
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-toast: 300;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

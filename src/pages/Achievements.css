@@ -1,0 +1,109 @@
+/* ---- Business growth stats ---- */
+
+.achievements-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+/* ---- Awards ---- */
+
+.awards-section {
+  background: var(--paper-0);
+  border-top: 1px solid var(--line-200);
+  border-bottom: 1px solid var(--line-200);
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--line-200);
+}
+
+.award-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: var(--sp-3);
+  align-items: center;
+  padding: var(--sp-3) var(--sp-2);
+  border-bottom: 1px solid var(--line-200);
+  transition: background var(--dur-fast) var(--ease-out), padding-left var(--dur-fast) var(--ease-out);
+}
+
+.award-row:hover {
+  background: var(--paper-50);
+  padding-left: var(--sp-3);
+}
+
+.award-row__year {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--signal-amber);
+}
+
+.award-row__body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.award-row__body span {
+  font-size: 0.85rem;
+  color: var(--slate-500);
+}
+
+/* ---- Global impact ---- */
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+.impact-card {
+  padding: var(--sp-4);
+  border-radius: var(--radius-lg);
+  background: var(--paper-0);
+  border: 1px solid var(--line-200);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.impact-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: var(--zoho-red);
+}
+
+.impact-card p {
+  color: var(--slate-500);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 880px) {
+  .achievements-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .award-row {
+    grid-template-columns: 60px 1fr;
+  }
+}

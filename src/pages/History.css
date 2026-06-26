@@ -1,0 +1,97 @@
+/* ---- Founding story ---- */
+
+.founding-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+.founding-grid__text p {
+  color: var(--slate-500);
+  line-height: 1.75;
+  margin-bottom: var(--sp-2);
+}
+
+.founding-grid__quote {
+  background: var(--ink-900);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  position: relative;
+}
+
+.founding-grid__quote blockquote {
+  margin: 0 0 var(--sp-2);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--paper-0);
+  line-height: 1.4;
+}
+
+.founding-grid__quote-attr {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate-300);
+}
+
+/* ---- Timeline section ---- */
+
+.history-timeline {
+  background: var(--paper-0);
+  border-top: 1px solid var(--line-200);
+  border-bottom: 1px solid var(--line-200);
+}
+
+/* ---- Growth journey ---- */
+
+.growth-journey {
+  background: var(--ink-900);
+  background-image: radial-gradient(circle at 80% 20%, rgba(200,32,47,0.18), transparent 50%);
+}
+
+.growth-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-3);
+}
+
+.growth-card {
+  text-align: center;
+  padding: var(--sp-4);
+  border: 1px solid var(--line-700);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.growth-card__value {
+  font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: var(--paper-0);
+}
+
+.growth-card__label {
+  font-size: 0.85rem;
+  color: var(--slate-300);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 880px) {
+  .founding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .growth-grid {
+    grid-template-columns: 1fr;
+  }
+}

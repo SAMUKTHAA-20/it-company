@@ -1,0 +1,17 @@
+{
+  "name": "zoho-corporation-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Zoho Corporation Profile",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5"
+  }
+}

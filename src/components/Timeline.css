@@ -1,0 +1,63 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: var(--sp-4);
+}
+
+.timeline__rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--zoho-red);
+  box-shadow: 0 0 0 4px var(--zoho-red-tint);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.timeline__line {
+  width: 2px;
+  flex: 1;
+  background: var(--line-200);
+  margin-top: 4px;
+}
+
+.timeline__content {
+  padding-bottom: var(--sp-5);
+}
+
+.timeline__year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--zoho-red);
+  letter-spacing: 0.04em;
+}
+
+.timeline__title {
+  font-size: 1.3rem;
+  margin: 0.3rem 0 0.5rem;
+}
+
+.timeline__text {
+  color: var(--slate-500);
+  max-width: 560px;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .timeline__item {
+    grid-template-columns: 24px 1fr;
+    gap: var(--sp-3);
+  }
+}

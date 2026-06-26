@@ -1,0 +1,45 @@
+.stat-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: var(--sp-3) 0;
+  border-left: 2px solid var(--line-700);
+  padding-left: var(--sp-3);
+}
+
+.stat-counter__value {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  font-weight: 800;
+  color: var(--paper-0);
+  line-height: 1;
+}
+
+.stat-counter__value--mono {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.stat-counter__suffix {
+  color: var(--zoho-red);
+  font-size: 0.7em;
+}
+
+.stat-counter__label {
+  font-size: 0.88rem;
+  color: var(--slate-300);
+  font-weight: 500;
+}
+
+/* Light variant for use on paper background (e.g. Achievements page) */
+.stat-counter--on-light {
+  border-left-color: var(--line-200);
+}
+
+.stat-counter--on-light .stat-counter__value {
+  color: var(--ink-900);
+}
+
+.stat-counter--on-light .stat-counter__label {
+  color: var(--slate-500);
+}
